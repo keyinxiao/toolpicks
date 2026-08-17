@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+<article>
+  <h1>{{ title }}</h1>
+  <div class="meta">{{ date }} · {{ word_count }} 字</div>
+  {{ content | safe }}
+</article>
+{% endblock %}
